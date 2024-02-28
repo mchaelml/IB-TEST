@@ -48,6 +48,10 @@ export default {
     '@nuxtjs/style-resources'
   ],
 
+  image: {
+    dir: 'assets/images'
+  },
+
   store: true,
 
   // Modules: https://go.nuxtjs.dev/config-modules

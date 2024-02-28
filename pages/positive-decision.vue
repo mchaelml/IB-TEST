@@ -2,7 +2,7 @@
   <div class="positive-decision">
     <div class="positive-decision__container">
       <div class="positive-decision__container__box">
-        <Icon name="small-loan" class="positive-decision__container__box__logo" />
+        <img :src="img" class="positive-decision__container__box__img" />
       </div>
       <div class="positive-decision__container__box">
         <div>
@@ -49,6 +49,7 @@ interface Computed {
   loanPeriod: string;
   loanAmount: string;
   extraInfo: State['modalState']['extraInfo'];
+  img: any;
 }
 
 interface Methods {
@@ -58,6 +59,9 @@ interface Methods {
 export default Vue.extend<unknown, Methods, Computed, unknown>({
   layout: 'default',
   computed: {
+    img() {
+      return require('~/assets/images/small-loan.png');
+    },
     ...mapGetters(['modalState']),
     extraInfo() {
       return this.modalState.extraInfo;
@@ -96,6 +100,7 @@ export default Vue.extend<unknown, Methods, Computed, unknown>({
     overflow: hidden;
     &__box {
       gap: 40px;
+      display: flex;
       & > div {
         width: 100%;
         &:first-child {
@@ -140,17 +145,19 @@ export default Vue.extend<unknown, Methods, Computed, unknown>({
       }
       justify-content: center;
       align-items: center;
-      &__logo {
+      position: relative;
+      &__img {
         position: absolute;
-        left: 20%;
+        width: 100%;
+        left: 10%;
         z-index: 2;
-        width: 35vw;
+        height: auto;
       }
       span {
         height: 100%;
         text-align: center;
       }
-      padding: 0 8vw;
+      padding: 0 100px;
       flex: 0.5;
       @include flex-column;
       background-color: get-color('white');
@@ -163,9 +170,9 @@ export default Vue.extend<unknown, Methods, Computed, unknown>({
     margin: get-margin(m) * 5 get-margin(l) * 7 get-margin(m) * 16;
     &__container {
       &__box {
-        padding: 0 4vw;
-        &__logo {
-          width: 25vw;
+        padding: 0 get-padding(xxl);
+        &__img {
+          width: 80%;
         }
       }
     }
@@ -179,10 +186,11 @@ export default Vue.extend<unknown, Methods, Computed, unknown>({
       border: none;
       &__box {
         padding: 0;
-        &__logo {
-          width: 40vw;
-          left: 50%;
-          margin-left: -20vw;
+        &__img {
+          left: auto;
+          height: 90%;
+          width: auto;
+          object-fit: contain;
         }
         flex: 1;
         &:first-child {

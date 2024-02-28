@@ -26,25 +26,7 @@ body {
   min-height: 100vh;
   min-width: 100vw;
   overflow: overlay;
-}
-
-a {
-  text-decoration: none;
-  color: get-color('primary');
-  &:hover {
-    color: get-color('primary');
-  }
-}
-
-::-webkit-scrollbar {
-  // width: 4px;
-  // margin-right: get-margin(s);
-  display: none;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: get-color('scroll-thumb');
-  border-radius: get-border-radius(s);
+  background-color: get-color('primary');
 }
 
 svg {
