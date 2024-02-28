@@ -13,7 +13,7 @@ import Header from '~/components/navigation/Header.vue';
 
 export default Vue.extend({
   name: 'default',
-  // middleware: 'routeGuard',
+  middleware: 'routeGuard',
   components: {
     Header,
     Modals
