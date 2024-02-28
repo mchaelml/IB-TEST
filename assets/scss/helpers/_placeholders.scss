@@ -1,0 +1,60 @@
+@import '../settings/variables';
+
+%text-medium {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: Inter;
+  color: get-color('text');
+}
+
+%text-big {
+  font-size: 68px;
+  line-height: 72px;
+  font-weight: 400;
+  font-family: Sebenta;
+  @media (max-width: $tablet) {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+%text-small {
+  line-height: 20px;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 400;
+}
+
+%text-tiny {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: Inter;
+}
+
+%text-header {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  font-family: Inter;
+}
+
+%text-decision-large {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 400;
+  font-family: Sebenta;
+
+  @media (max-width: $tablet) {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+%text-error {
+  font-size: 12px;
+  line-height: 18px;
+  font-family: Inter;
+  font-weight: 400;
+}

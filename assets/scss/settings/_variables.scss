@@ -1,0 +1,75 @@
+$colors: (
+  'primary': #fbfbf9,
+  'secondary': #e3d2ff,
+  'text': #21093a,
+  'mini-loan': #d9d4a7,
+  'dark-secondary': #aa93ff,
+  'hovered': #bba8ff,
+  'disabled': #dedede,
+  'disabled-text': #9c9c9c,
+  'pressed': #9f85ff,
+  'input-border': #60378b,
+  'red': #eb5757,
+  'no-bg-button': #f0f0ea,
+  'white': #ffffff,
+  'separator': #dedae1,
+  'slider-track': #d0beeb,
+  'divider': #c6b4e1,
+  'slider-text': #6f5989
+);
+
+$font-family: (
+  'primary': #{'Inter',
+  sans-serif},
+  'secondary': #{'Sebenta',
+  sans-serif}
+);
+
+$vue-deep-selector: '/deep/';
+
+$margins: (
+  s: 5px,
+  m: 8px,
+  l: 12px,
+  xl: 24px,
+  xxl: 36px,
+  xxxl: 48px,
+  xxxxl: 60px
+);
+
+$paddings: (
+  s: 5px,
+  m: 8px,
+  l: 12px,
+  xl: 24px,
+  xxl: 36px,
+  xxxl: 48px,
+  xxxxl: 60px
+);
+
+$border-radiuses: (
+  s: 5px,
+  m: 10px,
+  l: 15px,
+  xl: 20px,
+  xxl: 30px,
+  xxxl: 100px,
+  xxxxl: 200px
+);
+
+$small_mobile: 320px;
+$medium_mobile: 375px;
+$mobile: 500px;
+$tablet: 768px;
+$large_tablet: 990px;
+$small_desktop: 1024px;
+$desktop: 1200px;
+$medium_desktop: 1440px;
+$large_desktop: 1920px;
+$ultrawide_desktop: 2560px;
+$xxl_desktop: 3840px;
+
+$navbar-height: 112px;
+$navbar-heigth-mobile: 72px;
+
+$ease: cubic-bezier(0.65, 0.05, 0.36, 1);

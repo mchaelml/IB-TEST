@@ -1,0 +1,15 @@
+@function get-margin($margin) {
+  @return map-get($margins, $margin);
+}
+
+@function get-padding($padding) {
+  @return map-get($paddings, $padding);
+}
+
+@function get-border-radius($border-radius) {
+  @return map-get($border-radiuses, $border-radius);
+}
+
+@function get-color($color) {
+  @return map-get($colors, $color);
+}

@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Sebenta';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./SebentaTrial-Regular.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Sebenta-Italic';
+  font-style: italic;
+  font-weight: 400;
+  src: url(./SebentaTrial-RegularItalic.otf) format('truetype');
+}
