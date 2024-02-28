@@ -174,7 +174,7 @@ $thumb-height: 36px;
     height: $thumb-height;
     border-radius: 100px;
     width: 52px;
-    background-image: url('assets/images/slider.png');
+    background-image: url('assets/svg/slider-arrows.svg?inline');
     background-position: center center;
     background-repeat: no-repeat;
   }
@@ -187,7 +187,7 @@ $thumb-height: 36px;
     background-color: get-color('dark-secondary');
     height: $thumb-height;
     width: 52px;
-    background-image: url('assets/images/slider.png');
+    background-image: url('assets/svg/slider-arrows.svg?inline');
     background-position: center center;
     background-repeat: no-repeat;
   }

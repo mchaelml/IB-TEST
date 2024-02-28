@@ -92,20 +92,21 @@ export default {
         oneOf: [
           {
             resourceQuery: /inline/,
-            use: ['babel-loader', 'vue-svg-loader']
-          },
-          {
             loader: 'file-loader',
             query: {
               name: 'assets/[name].[hash:8].[ext]'
             }
+          },
+          {
+            loader: 'vue-svg-loader',
+            options: {
+              // Optional svgo options
+              svgo: {
+                plugins: [{ removeViewBox: false }]
+              }
+            }
           }
         ]
-      });
-
-      config.module.rules.push({
-        test: /\.svg$/,
-        use: [{ loader: 'html-loader' }]
       });
     }
   }
